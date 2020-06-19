@@ -9,8 +9,9 @@ basic.forever(function () {
 })
 basic.forever(function () {
     serial.writeValue("Sonar: ", sonar.ping(
-    DigitalPin.P0,
-    DigitalPin.P0,
+    DigitalPin.P1,
+    DigitalPin.P2,
     PingUnit.MicroSeconds
     ))
+    pins.servoWritePin(AnalogPin.P0, 180)
 })
